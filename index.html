@@ -21,12 +21,12 @@
 
     <div id="mainContainer">
 
-        <div id="container1" class="commonContainer">
+        <div id="container1" class="commonContainer" data-aos = "fade-right"   data-aos-easing="ease-in-out" data-aos-duration="1000">
 
 
 
         </div>
-        <div id="container2" class="commonContainer">
+        <div id="container2" class="commonContainer"  data-aos = "fade-left"   data-aos-easing="ease-in-out" data-aos-duration="1000">
             <p id="para1">Alles, was nur ein HORIZON kann-im preisgekrönten Design</p>
             <div id="vb">
 
@@ -37,16 +37,16 @@
     </div>
 
     <div id="buttonContainer">
-        <button id="btn1" class="btn active " onclick="changeImage('img/x ric-s white.png'); handleClick(this);">
+        <button data-aos = "fade-in"   data-aos-easing="ease-in-out" data-aos-duration="1000" id="btn1" class="btn active " onclick="changeImage('img/x ric-s white.png'); handleClick(this);">
             <h3>HORIZON X RIC-S</h3>
         </button>
-        <button id="btn2" class="btn" onclick="changeImage('img/RIC-X-Black.png'); handleClick(this);" >
+        <button data-aos = "fade-in"   data-aos-easing="ease-in-out" data-aos-duration="1500" id="btn2" class="btn" onclick="changeImage('img/RIC-X-Black.png'); handleClick(this);">
             <h3>HORIZON X RIC</h3>
         </button>
-        <button id="btn3" class="btn" onclick="changeImage('img/RIC-R-AX-Black.png'); handleClick(this);">
+        <button data-aos = "fade-in"   data-aos-easing="ease-in-out" data-aos-duration="2000" id="btn3" class="btn" onclick="changeImage('img/RIC-R-AX-Black.png'); handleClick(this);">
             <h3>HORIZON AX RIC-R</h3>
         </button>
-        <button id="btn4" class="btn" onclick="changeImage('img/cic2.png'); handleClick(this);">
+        <button data-aos = "fade-in"   data-aos-easing="ease-in-out" data-aos-duration="2500" id="btn4" class="btn" onclick="changeImage('img/cic2.png'); handleClick(this);">
             <h3>HORIZON X CIC</h3>
         </button>
 
@@ -55,9 +55,11 @@
 
     <div id="productContainer">
 
-<div id="prevArrow">
-    <i id="prev" class="fa-solid fa-chevron-left"></i>
-</div>
+        <div id="prevArrow">
+            <i id="prev" class="fa-solid fa-chevron-left"></i>
+        </div>
+
+        <div id="extradiv">
 
         <div id="productDetails">
             <div id="headingDetails">
@@ -91,7 +93,8 @@
                         <div onclick="changeImage('img/RIC-R-AX-Black.png')" class="colorItems" id="color10"></div>
                         <div onclick="changeImage('img/RIC-R-AX-Beige.png')" class="colorItems" id="color11"></div>
                         <div onclick="changeImage('img/RIC-R-AX-Deep-Brown.png')" class="colorItems" id="color12"></div>
-                        <div onclick="changeImage('img/RIC-R-AX-Sandy-brown.png')" class="colorItems" id="color13"></div>
+                        <div onclick="changeImage('img/RIC-R-AX-Sandy-brown.png')" class="colorItems" id="color13">
+                        </div>
                         <div onclick="changeImage('img/RIC-R-AX-Silver.png')" class="colorItems" id="color14"></div>
 
                     </div>
@@ -99,7 +102,7 @@
                     <div class="color-picker" id="colorPicker3">
                         <div onclick="changeImage('img/cic2.png')" class="colorItems" id="color15"></div>
                         <div onclick="changeImage('img/cic1.png')" class="colorItems" id="color16"></div>
-                       
+
 
                     </div>
 
@@ -115,8 +118,10 @@
             <img style="display: none;" class="imageAll" id="hearImg1" src="./img/RIC-X-Black.png" alt="">
             <img style="display: none;" class="imageAll" id="hearImg2" src="./img/RIC-R-AX-Black.png" alt="">
             <img style="display: none;" class="imageAll" id="hearImg3" src="./img/cic2.png" alt="">
-            
+
         </div>
+
+    </div>
 
         <div id="nextArrow">
             <i id="next" class="fa-solid fa-chevron-right"></i>
@@ -128,6 +133,11 @@
 
 
     <script src="./main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 
