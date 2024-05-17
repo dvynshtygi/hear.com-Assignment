@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Titillium Web", sans-serif;
+    user-select: none;
+}
+
+
+#mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+
+}
+
+#container1 {
+    background: url('./img/personimg.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 49%;
+}
+
+#container2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 49%;
+    background-color: #1a2441;
+}
+
+#para1 {
+    font-size: 2rem;
+    padding: 3rem;
+    font-weight: 400;
+    font-style: normal;
+    width: 80%;
+    color: white;
+
+}
+
+#vb {
+    position: absolute;
+    border-left: 15px solid skyblue;
+    height: 10rem;
+    top: 0px;
+    left: 0px;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+
+    padding: 2rem;
+    font-weight: lighter;
+    font-style: normal;
+    cursor: pointer;
+    background: none;
+    border: 1px solid gray;
+    font-family: "Titillium Web", sans-serif;
+    color: gray;
+}
+
+#btn1 {
+    margin-right: 1.5rem;
+}
+
+#btn1:active {
+    background-color: #1a2441;
+}
+
+#btn2 {
+    margin-right: 1.5rem;
+}
+
+#btn3 {
+    margin-right: 1.5rem;
+}
+
+
+.btn:hover {
+    background-color: #1a2441;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+#productContainer {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #abb8c3;
+    height: 20rem;
+}
+
+
+#productDetails {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+    font-size: 1rem;
+
+
+}
+
+
+
+#hd1 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 3rem;
+    width: 80%;
+}
+
+#productImage {
+    display: flex;
+    height: 100%;
+    width: 35%;
+    font-size: 1rem;
+    align-items: end;
+    justify-content: center;
+
+
+
+}
+
+
+.imageAll {
+
+
+    height: 90%;
+    width: 18rem;
+
+
+}
+
+#colorOption {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#selColor {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(74, 74, 74);
+}
+
+.color-picker {
+    background-color: #ffffff;
+    width: 10em;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    border-radius: 3em;
+    padding: 0.5em;
+   
+
+
+
+
+}
+
+
+
+#color1 {
+    background-color: rgb(213, 212, 212);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#color2 {
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#color3 {
+    background: linear-gradient(to right, rgb(126, 126, 126) 50%, rgb(16, 7, 39) 50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color4 {
+    background: linear-gradient(to right, rgb(245, 215, 192) 50%, rgb(16, 7, 39) 50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color5 {
+    background: linear-gradient(to right, rgb(205, 205, 205) 50%, rgb(245, 215, 192) 50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color6 {
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color7 {
+    background-color: rgb(190, 141, 141);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color8 {
+    background-color: rgb(119, 84, 84);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color9 {
+    background-color: rgb(179, 179, 179);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color10 {
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color11 {
+    background-color: rgb(189, 157, 157);
+    height: 20px;
+
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color12 {
+    background-color: rgb(77, 77, 77);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color13 {
+    background-color: rgb(119, 84, 84);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color14 {
+    background-color: rgb(175, 175, 175);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color15 {
+    
+    background-color: rgb(77, 77, 77);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+#color16 {
+    background-color: rgb(119, 84, 84);    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+
+
+
+#prev {
+
+
+    font-size: 5rem;
+
+    cursor: pointer;
+
+}
+
+#next {
+
+
+    font-size: 5rem;
+
+    cursor: pointer;
+
+}
+
+#colorPicker1 {
+    display: none;
+}
+
+#colorPicker2 {
+    display: none;
+}
+
+#colorPicker3 {
+    display: none;
+}
+
+.active {
+    background-color: #1a2441;
+    color: white;
+   
+}
+
+.selected-color {
+    border: 2px solid #780038; /* Add your desired border style */
+}

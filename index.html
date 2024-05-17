@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <!--Upper Section With two Container -->
+
+    <div id="mainContainer">
+
+        <div id="container1" class="commonContainer">
+
+
+
+        </div>
+        <div id="container2" class="commonContainer">
+            <p id="para1">Alles, was nur ein HORIZON kann-im preisgekrönten Design</p>
+            <div id="vb">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="buttonContainer">
+        <button id="btn1" class="btn active " onclick="changeImage('img/x ric-s white.png'); handleClick(this);">
+            <h3>HORIZON X RIC-S</h3>
+        </button>
+        <button id="btn2" class="btn" onclick="changeImage('img/RIC-X-Black.png'); handleClick(this);" >
+            <h3>HORIZON X RIC</h3>
+        </button>
+        <button id="btn3" class="btn" onclick="changeImage('img/RIC-R-AX-Black.png'); handleClick(this);">
+            <h3>HORIZON AX RIC-R</h3>
+        </button>
+        <button id="btn4" class="btn" onclick="changeImage('img/cic2.png'); handleClick(this);">
+            <h3>HORIZON X CIC</h3>
+        </button>
+
+
+    </div>
+
+    <div id="productContainer">
+
+<div id="prevArrow">
+    <i id="prev" class="fa-solid fa-chevron-left"></i>
+</div>
+
+        <div id="productDetails">
+            <div id="headingDetails">
+                <p id="hd1"><b>hear.com </b><span id="changeText">HORIZON X RIC-S</span></p>
+
+                <div id="colorOption">
+
+                    <div>
+                        <p id="selColor">Select color</p>
+                    </div>
+
+
+                    <div class="color-picker" id="colorPicker">
+                        <div onclick="changeImage('img/x ric-s white.png')" class="colorItems" id="color1"></div>
+                        <div onclick="changeImage('img/x ric-s black.png')" class="colorItems" id="color2"></div>
+                        <div onclick="changeImage('img/x ric-s bluegray.png')" class="colorItems" id="color3"></div>
+                        <div onclick="changeImage('img/x ric-s Cosmicblue.png')" class="colorItems" id="color4"></div>
+                        <div onclick="changeImage('img/x ric-s Snowwhite.png')" class="colorItems" id="color5"></div>
+
+                    </div>
+
+                    <div class="color-picker" id="colorPicker1">
+                        <div onclick="changeImage('img/RIC-X-Black.png')" class="colorItems" id="color6"></div>
+                        <div onclick="changeImage('img/RIC-X-Beige.png')" class="colorItems" id="color7"></div>
+                        <div onclick="changeImage('img/RIC-X-SandyBrown.png')" class="colorItems" id="color8"></div>
+                        <div onclick="changeImage('img/RIC-X-Silver.png')" class="colorItems" id="color9"></div>
+
+                    </div>
+
+                    <div class="color-picker" id="colorPicker2">
+                        <div onclick="changeImage('img/RIC-R-AX-Black.png')" class="colorItems" id="color10"></div>
+                        <div onclick="changeImage('img/RIC-R-AX-Beige.png')" class="colorItems" id="color11"></div>
+                        <div onclick="changeImage('img/RIC-R-AX-Deep-Brown.png')" class="colorItems" id="color12"></div>
+                        <div onclick="changeImage('img/RIC-R-AX-Sandy-brown.png')" class="colorItems" id="color13"></div>
+                        <div onclick="changeImage('img/RIC-R-AX-Silver.png')" class="colorItems" id="color14"></div>
+
+                    </div>
+
+                    <div class="color-picker" id="colorPicker3">
+                        <div onclick="changeImage('img/cic2.png')" class="colorItems" id="color15"></div>
+                        <div onclick="changeImage('img/cic1.png')" class="colorItems" id="color16"></div>
+                       
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <div id="productImage">
+
+            <img style="display: flex;" class="imageAll" id="hearImg" src="./img/x ric-s white.png" alt="">
+            <img style="display: none;" class="imageAll" id="hearImg1" src="./img/RIC-X-Black.png" alt="">
+            <img style="display: none;" class="imageAll" id="hearImg2" src="./img/RIC-R-AX-Black.png" alt="">
+            <img style="display: none;" class="imageAll" id="hearImg3" src="./img/cic2.png" alt="">
+            
+        </div>
+
+        <div id="nextArrow">
+            <i id="next" class="fa-solid fa-chevron-right"></i>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
